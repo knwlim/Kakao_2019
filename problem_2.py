@@ -10,6 +10,6 @@ def solution(N, stages):
 
     for index, failure_rate in enumerate(answer):
         answer_tuple.append((failure_rate, index+1))
-        answer_tuple = sorted(answer_tuple, key=lambda item: item[0], reverse=True)
+    answer_tuple = sorted(answer_tuple, key=lambda item: item[0], reverse=True)
     answer = [i[1] for i in answer_tuple]
     return answer
